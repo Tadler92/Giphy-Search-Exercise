@@ -25,7 +25,13 @@ $form.on('submit', function (e) {
   // console.log($input.val());
   searchGiphy($input.val());
   $input.val("");
-})
+});
+
+const $removeBtn = $('#remove-button');
+$removeBtn.on('click', () => {
+  // e.preventDefault();
+  $gifArea.empty();
+});
 
 // 'http://api.giphy.com/v1/gifs/search?q=hilarious&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym'
 
